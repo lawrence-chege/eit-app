@@ -47,3 +47,6 @@ body {
   background: white;
   background-image: linear-gradient(to top, #09d3ac, white)
 }
+form{
+  display: inline-block;
+}
