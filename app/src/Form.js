@@ -23,6 +23,9 @@ class Form extends Component{
         const {name, country} = this.state;
         return (
             <form className="new-eit">
+                <input 
+                type="checkbox"
+                />
                 <label>Name </label>
                 <input
                     type="text"
