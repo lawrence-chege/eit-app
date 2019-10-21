@@ -42,6 +42,7 @@ class Form extends Component{
                     placeholder ="Home country"
                     onChange={this.handleChange}
                 />
+                <label>Age</label>
                 <input
                     type="text"
                     name="age"
@@ -49,6 +50,7 @@ class Form extends Component{
                     placeholder ="Age of Eit"
                     onChange={this.handleChange}
                 />
+                <label>Phone Number</label>
                 <input
                     type="text"
                     name="phone"
