@@ -15,6 +15,11 @@ const TableBody = props => {
     const rows = props.charactersData.map((row, index) =>{
         return (
             <tr key={index}>
+                <td>
+                <input 
+                type="checkbox"
+                />
+                </td>
                 <td>{row.name}</td>
                 <td>{row.country}</td>
                 <td>
