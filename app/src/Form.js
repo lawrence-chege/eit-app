@@ -23,7 +23,7 @@ class Form extends Component{
         this.setState(this.initialState)
     }
     render(){
-        const {name, country} = this.state;
+        const {name, country, age, phone} = this.state;
         return (
             <form className="new-eit">
                 <label>Name </label>
