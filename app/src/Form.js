@@ -22,19 +22,21 @@ class Form extends Component{
     render(){
         const {name, country} = this.state;
         return (
-            <form>
+            <form className="new-eit">
                 <label>Name </label>
                 <input
                     type="text"
                     name="name"
-                    vlue={name}
+                    placeholder= "EIT's Name"
+                    value={name}
                     onChange={this.handleChange}
                 />
                 <label>Country </label>
                 <input
                     type="text"
                     name="country"
-                    vlue={country}
+                    value={country}
+                    placeholder ="Home country"
                     onChange={this.handleChange}
                 />
                 <input type="button" value="Submit" onClick={this.submitForm} />
