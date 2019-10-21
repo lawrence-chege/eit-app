@@ -24,7 +24,7 @@ class App extends Component {
     
     return(
       <div className="container">
-        <h1>Hello World</h1>
+        <h1>Akwaaba EITs</h1>
         < Form handleSubmit={this.handleSubmit}/>
         <Table charactersData = {this.state.characters} removeCharacter={this.removeCharacter}/>
       </div>
