@@ -24,7 +24,7 @@ body {
   padding: 10px;
   font-family: sans-serif;
   background-color: #ffffcc;
-  background-image: trnear-gradient(to bottom, #2ebebe, #8FC93A 100%);
+  background-image: linear-gradient(to bottom, #2ebebe, #8FC93A 100%);
   background-attachment: fixed;
   position: absolute;
 

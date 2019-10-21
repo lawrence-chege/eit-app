@@ -4,6 +4,7 @@ const TableHeader = () =>{
     return (
         <thead>
             <tr>
+                <th>Check</th>
                 <th>Name</th>
                 <th>Country</th>
             </tr>
@@ -16,7 +17,7 @@ const TableBody = props => {
         return (
             <tr key={index}>
                 <td>
-                <input 
+                <input
                 type="checkbox"
                 />
                 </td>
