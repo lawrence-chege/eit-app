@@ -5,7 +5,10 @@ class Form extends Component{
         super(props)
         this.initialState ={
             name: '',
-            Country: ''
+            Country: '',
+            age:'',
+            phone:'',
+
         }
         this.state = this.initialState
     }
@@ -37,6 +40,20 @@ class Form extends Component{
                     name="country"
                     value={country}
                     placeholder ="Home country"
+                    onChange={this.handleChange}
+                />
+                <input
+                    type="text"
+                    name="age"
+                    value={age}
+                    placeholder ="Age of Eit"
+                    onChange={this.handleChange}
+                />
+                <input
+                    type="text"
+                    name="phone"
+                    value={phone}
+                    placeholder ="Phone Number"
                     onChange={this.handleChange}
                 />
                 <input type="button" value="Submit" onClick={this.submitForm} />
