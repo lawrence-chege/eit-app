@@ -4,12 +4,12 @@ const TableHeader = () =>{
     return (
         <thead>
             <tr>
-                <th scope="row">Check</th>
+                <th scope="row">  </th>
                 <th scope="row">Name</th>
                 <th scope="row">Country</th>
                 <th scope="row">Age</th>
                 <th scope="row">Phone Number</th>
-                <th scope="row"><button>Batch Delete</button></th>
+                <th scope="row"><button className="btn btn-light">Delete Selected</button></th>
             </tr>
         </thead>
     )
@@ -29,7 +29,8 @@ const TableBody = props => {
                 <td>{row.age}</td>
                 <td>{row.phone}</td>
                 <td>
-                    <button onClick = {()=> props.removeCharacter(index)}>Delete</button>
+                    <button className="btn btn-danger" onClick = {()=> props.removeCharacter(index)}>Delete</button>&nbsp;
+                    <button className="btn btn-info" onClick = {()=> props.editCharacter(index)}>Edit </button>
                 </td>
             </tr>
         )
