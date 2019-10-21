@@ -21,7 +21,6 @@
   color: #09d3ac;
 }
 body {
-  padding: 10px;
   font-family: sans-serif;
   background-color: #ffffcc;
   background-image: linear-gradient(to bottom, #2ebebe, #8FC93A 100%);
@@ -38,19 +37,6 @@ body {
 
   font-size: 1.1em;
 }
-
-.container {
-  top: 50px;
-  max-width: 100%;
-  margin:0 auto;
-  min-height: 100%;
-  background: white;
-  background-image: linear-gradient(to top, #09d3ac, white)
-}
-.eit-app{
-  display: inline-flex;
-}
-td{
-  padding: 1.5em;
-  margin: 1.5em;
+.container{
+  width:100%;
 }

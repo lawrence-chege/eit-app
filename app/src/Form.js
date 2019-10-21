@@ -25,7 +25,7 @@ class Form extends Component{
     render(){
         const {name, country, age, phone} = this.state;
         return (
-            <form className="new-eit" className="form-group">
+            <form className="form-group">
                 <label>Name </label>
                 <input
                     className="form-control"
@@ -62,6 +62,7 @@ class Form extends Component{
                     placeholder ="Phone Number"
                     onChange={this.handleChange}
                 />
+                <br></br>
                 <input className="btn btn-success" type="button" value="Submit" onClick={this.submitForm} />
 
             </form>
