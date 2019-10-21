@@ -25,9 +25,10 @@ class Form extends Component{
     render(){
         const {name, country, age, phone} = this.state;
         return (
-            <form className="new-eit">
+            <form className="new-eit" className="form-group">
                 <label>Name </label>
                 <input
+                    className="form-control"
                     type="text"
                     name="name"
                     placeholder= "EIT's Name"
@@ -37,6 +38,7 @@ class Form extends Component{
                 <label>Country </label>
                 <input
                     type="text"
+                    className="form-control"
                     name="country"
                     value={country}
                     placeholder ="Home country"
@@ -46,6 +48,7 @@ class Form extends Component{
                 <input
                     type="text"
                     name="age"
+                    className="form-control"
                     value={age}
                     placeholder ="Age of Eit"
                     onChange={this.handleChange}
@@ -53,12 +56,13 @@ class Form extends Component{
                 <label>Phone Number</label>
                 <input
                     type="text"
+                    className="form-control"
                     name="phone"
                     value={phone}
                     placeholder ="Phone Number"
                     onChange={this.handleChange}
                 />
-                <input type="button" value="Submit" onClick={this.submitForm} />
+                <input className="btn btn-success" type="button" value="Submit" onClick={this.submitForm} />
 
             </form>
         )

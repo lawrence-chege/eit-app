@@ -4,12 +4,12 @@ const TableHeader = () =>{
     return (
         <thead>
             <tr>
-                <th>Check</th>
-                <th>Name</th>
-                <th>Country</th>
-                <th>Age</th>
-                <th>Phone Number</th>
-                <th><button>Batch Delete</button></th>
+                <th scope="row">Check</th>
+                <th scope="row">Name</th>
+                <th scope="row">Country</th>
+                <th scope="row">Age</th>
+                <th scope="row">Phone Number</th>
+                <th scope="row"><button>Batch Delete</button></th>
             </tr>
         </thead>
     )
@@ -44,7 +44,7 @@ class Table extends Component {
     render (){
         const {charactersData, removeCharacter} = this.props
         return(
-            <table>
+            <table className="table">
                 <TableHeader />
                 <TableBody charactersData={charactersData} removeCharacter={removeCharacter}/>
             </table>
