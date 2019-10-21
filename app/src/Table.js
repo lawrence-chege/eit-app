@@ -9,6 +9,7 @@ const TableHeader = () =>{
                 <th>Country</th>
                 <th>Age</th>
                 <th>Phone Number</th>
+                <th><button>Batch Delete</button></th>
             </tr>
         </thead>
     )

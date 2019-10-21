@@ -47,6 +47,10 @@ body {
   background: white;
   background-image: linear-gradient(to top, #09d3ac, white)
 }
-form{
-  display: inline-block;
+.eit-app{
+  display: inline-flex;
+}
+td{
+  padding: 1.5em;
+  margin: 1.5em;
 }
