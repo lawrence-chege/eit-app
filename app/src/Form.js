@@ -5,7 +5,7 @@ class Form extends Component{
         super(props)
         this.initialState ={
             name: '',
-            job: ''
+            Country: ''
         }
         this.state = this.initialState
     }
@@ -20,7 +20,7 @@ class Form extends Component{
         this.setState(this.initialState)
     }
     render(){
-        const {name, job} = this.state;
+        const {name, country} = this.state;
         return (
             <form>
                 <label>Name </label>
@@ -30,11 +30,11 @@ class Form extends Component{
                     vlue={name}
                     onChange={this.handleChange}
                 />
-                <label>Job </label>
+                <label>Country </label>
                 <input
                     type="text"
-                    name="job"
-                    vlue={job}
+                    name="country"
+                    vlue={country}
                     onChange={this.handleChange}
                 />
                 <input type="button" value="Submit" onClick={this.submitForm} />
